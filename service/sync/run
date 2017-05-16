@@ -1,0 +1,4 @@
+#!/bin/bash
+
+nohup qrsboxcli sync >/dev/null 2>&1 &
+exec qrsboxcli log 2>&1

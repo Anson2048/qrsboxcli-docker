@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  sync:
+    build: .
+    image: anson2048/qrsboxcli
+    volumes:
+    - ./data:/data
+    environment:
+    - ACCESSKEY=ACCESSKEY
+    - SECRETKEY=SECRETKEY
+    - BUCKET=BUCKET
+    restart: unless-stopped
